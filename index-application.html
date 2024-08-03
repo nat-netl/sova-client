@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Online store for printing designs on clothes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?v=1.0.1">
+    <title>SOWA</title>
+
+    <style>
+        .wrapper {
+            background: url(./images/dist/bg-top.png)top 25px center no-repeat,
+                url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                url(./images/dist/bg-center.png)top 447px center /1px no-repeat,
+                url(./images/dist/bg-bottom.png)bottom center no-repeat;
+        }
+
+        @media screen and (max-width:500px) {
+            .wrapper {
+                background: url(./images/dist/bg-top.png)top center /269px no-repeat,
+                    url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                    url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                    url(./images/dist/bg-center.png)top 447px center /1px no-repeat,
+                    url(./images/dist/bg-bottom.png)bottom center no-repeat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__wrapper-content">
+                    <div class="header__inner">
+                        <a href="/">
+                            <h1 class="header__logo">
+                                <picture>
+                                    <source srcset="./images/dist/Logo.webp" type="image/webp">
+                                    <img src="./images/dist/Logo.png" alt="logo">
+                                </picture>
+                            </h1>
+                        </a>
+                        <div class="header__time">
+                            <img src="./images/dist/time-min.svg" alt="time">
+                            <p>24/7</p>
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="index-page2.html" class="nav__link">Exchange rules</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page3.html" class="nav__link">AML/KYC</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page4.html" class="nav__link">FAQ</a>
+                            </li>
+                            <li class="nav__list-item nav__list-item_home-style">
+                                <a href="index.html" class="nav__link">Home</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <button class="header__language">en</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="application">
+                <div class="application__container container">
+                    <div class="application__wrapper-1">
+                        <h2 class="application__title">
+                            Application: 2187595
+                        </h2>
+                        <p class="application__time">
+                            Pay within: <span>20:00</span> minutes
+                        </p>
+                    </div>
+
+                    <div class="confirm__wrapper application__new-style">
+                        <div class="confirm__control confirm__control_full-width">
+                            <p class="confirm__internal-title">Send</p>
+                            <div class="confirm__value-wrap">
+                                <div class="confirm__inner-img confirm__inner-img_one">
+                                    <img class="confirm__image-one" src="" alt="currency">
+                                </div>
+                                <p class="confirm__text-style js-sum"> <span id="currency-name"></span></p>
+                            </div>
+                        </div>
+                        <div class="confirm__control confirm__control_full-width">
+                            <p class="confirm__internal-title">Receive</p>
+                            <div class="confirm__value-wrap">
+                                <div class="confirm__inner-img confirm__inner-img_two">
+                                    <img class="confirm__image-two" src="./images/dist/UPI-P-min.svg" alt="usdt">
+                                </div>
+                                <div>
+                                    <p class="confirm__text-style js-result">10804.6 INR</p>
+                                    <p>UPI ID or Phone number</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="application__wrapper-2">
+                        <h3 class="application__subtitle">
+                            Transfer to the details
+                        </h3>
+                        <div class="application__flex-wrapper">
+                            <div class="application__inner-one">
+                                <p class="application__text">Wallet</p>
+                                <div class="application__block">
+                                    <div class="confirm__inner-img application__inner-img">
+                                        <img class="confirm__image-one" src="./images/dist/usdt-P-min.svg" alt="usdt">
+                                    </div>
+
+                                    <p class="application__code"></p>
+                                    <div class="application__image application__image_one">
+                                        <img src="./images/dist/copy-min.svg" alt="copy">
+                                    </div>
+                                </div>
+
+                                <img class="application__qr-code" src="" alt="">
+                            </div>
+                            <div class="application__inner-two">
+                                <p class="application__text">Amount</p>
+                                <div class="application__block">
+                                    <div class="confirm__inner-img application__inner-img">
+                                        <img class="confirm__image-one" src="./images/dist/usdt-P-min.svg" alt="usdt">
+                                    </div>
+
+                                    <p class="application__receive js-sum"> <span id="currency-name"></span></p>
+
+                                    <div class="application__image application__image_two">
+                                        <img src="./images/dist/copy-min.svg" alt="copy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="application__description">
+                            Make sure you have transferred the funds and clicked the «I have paid» button <br>
+                            This operation is performed manually and takes from 5 to 60 minutes
+                        </p>
+                    </div>
+
+                    <div class="application__wrapper-4">
+                        <div class="confirm__btn-inner application__btn-inner">
+                            <button class="confirm__btn confirm__btn_dark"><a href="index.html">Cancel</a></button>
+                            <button class="confirm__btn confirm__btn_green"><a href="index-application-two.html">Go to
+                                    payment</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="reviews application__top-style">
+                <div class="reviews__container container">
+                    <div class="reviews__main-wrapper">
+                        <h2 class="reviews__text">Our reviews</h2>
+                        <ul class="reviews__list">
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Sameer</p>
+                                </div>
+                                <p class="reviews__comment">Great service, fast payouts</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amir</p>
+                                </div>
+                                <p class="reviews__comment">I've been using it for two yearsno problems</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Suraj</p>
+                                </div>
+                                <p class="reviews__comment">There was a delay in payment, the manager explained
+                                    everything
+                                    and gave me a discount.
+                                    Now I only exchange here</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amit</p>
+                                </div>
+                                <p class="reviews__comment">at night on the service can be delays, once I waited for
+                                    about
+                                    20 minutes, but the
+                                    transaction was completed successfully</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Isha</p>
+                                </div>
+                                <p class="reviews__comment">everything is top notch, been using for years, love it all
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/just-validate.min.js?v=1.0.1"></script>
+    <script src="js/main.min.js?v=1.0.1"></script>
+</body>
+
+</html>

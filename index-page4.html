@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Online store for printing designs on clothes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?v=1.0.1">
+    <title>SOWA</title>
+
+    <style>
+        .wrapper {
+            background: url(./images/dist/bg-top.png)top 25px center no-repeat,
+                url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                url(./images/dist/bg-center.png)top 447px center no-repeat,
+                url(./images/dist/bg-bottom.png)bottom center no-repeat;
+        }
+
+        @media screen and (max-width:500px) {
+            .wrapper {
+                background: url(./images/dist/bg-top.png)top center /269px no-repeat,
+                    url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                    url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                    url(./images/dist/bg-center.png)top 447px center /525px no-repeat,
+                    url(./images/dist/bg-bottom.png)bottom center no-repeat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__wrapper-content">
+                    <div class="header__inner">
+                        <a href="/">
+                            <h1 class="header__logo">
+                                <picture>
+                                    <source srcset="./images/dist/Logo.webp" type="image/webp">
+                                    <img src="./images/dist/Logo.png" alt="logo">
+                                </picture>
+                            </h1>
+                        </a>
+
+                        <div class="header__time">
+                            <img src="./images/dist/time-min.svg" alt="time">
+                            <p>24/7</p>
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="index-page2.html" class="nav__link">Exchange rules</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page3.html" class="nav__link">AML/KYC</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page4.html" class="nav__link">FAQ</a>
+                            </li>
+                            <li class="nav__list-item nav__list-item_home-style">
+                                <a href="index.html" class="nav__link">Home</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <button class="header__language">en</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="questions">
+                <div class="questions__container container">
+                    <div class="top-block ">
+                        <h1 class="top-block__title top-block__title_mb">
+                            Answers to questions
+                        </h1>
+                        <div class="top-block__inner top-block__inner_page-free">
+                            <span><a href="index.html">Home</a></span>
+                            <p>Answers to questions</p>
+                        </div>
+                    </div>
+
+                    <div class="questions__wrapper">
+                        <ul class="questions__list">
+                            <li class="questions__list-item">
+                                <div class="questions__inner">
+                                    <h3 class="questions__subtitle-text">
+                                        What is the purpose of confirmations in the Bitcoin system?
+                                    </h3>
+                                    <p class="questions__descr">
+                                        It depends on the workload of the service. When receiving Bitcoin coins, the
+                                        transfer must be included in a block for confirmation. One inclusion in a block
+                                        is one confirmation. When there are two or more confirmations, the transfer is
+                                        considered confirmed, and Sowa operators process the request
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="questions__list-item">
+                                <div class="questions__inner">
+                                    <h3 class="questions__subtitle-text">
+                                        How much time is given to create an application?
+                                    </h3>
+                                    <p class="questions__descr">
+                                        You are given 15 minutes to create an application. If for some reason you do not
+                                        manage to create the application within the specified time, the application will
+                                        automatically disappear. In this case, please create a new application
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="questions__list-item">
+                                <div class="questions__inner">
+                                    <h3 class="questions__subtitle-text">
+                                        How long does it take to process an application?
+                                    </h3>
+                                    <p class="questions__descr">
+                                        It takes from 10 to 60 minutes to process one application. It depends on the
+                                        workload of the service
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="questions__list-item">
+                                <div class="questions__inner">
+                                    <h3 class="questions__subtitle-text">
+                                        What is a destination tag (memo)?
+                                    </h3>
+                                    <p class="questions__descr">
+                                        Memo and Destination Tag are additional identifiers for your
+                                        wallet/account. As a rule, exchanges provide users with one common wallet for
+                                        replenishment,
+                                        and then distribute the funds received in accordance with the specified Memo.
+                                        If you do not specify it, your funds will go to the exchange wallet, but it will
+                                        not be able to
+                                        redirect them directly to your account. Make sure you enter the correct
+                                        Payment ID, Memo, or Destination Tag in destinations such as
+                                        EOS, Ripple (XRP), Stellar Lumens (XLM), Binance Coin (BNB) or Monero (XMR)
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <img class="questions__image questions__image_desctop" src="./images/dist/Picture-bg-svg.svg" alt="baground">
+                        <img class="questions__image questions__image_mobil" src="./images/dist/picture-SVG-bg-3.svg" alt="baground">
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="reviews">
+                <div class="reviews__container container">
+                    <div class="reviews__main-wrapper">
+                        <h2 class="reviews__text">Our reviews</h2>
+                        <ul class="reviews__list">
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Sameer</p>
+                                </div>
+                                <p class="reviews__comment">Great service, fast payouts</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amir</p>
+                                </div>
+                                <p class="reviews__comment">I've been using it for two yearsno problems</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Suraj</p>
+                                </div>
+                                <p class="reviews__comment">There was a delay in payment, the manager explained
+                                    everything
+                                    and gave me a discount.
+                                    Now I only exchange here</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amit</p>
+                                </div>
+                                <p class="reviews__comment">at night on the service can be delays, once I waited for
+                                    about
+                                    20 minutes, but the
+                                    transaction was completed successfully</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Isha</p>
+                                </div>
+                                <p class="reviews__comment">everything is top notch, been using for years, love it all
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+
+
+
+
+   
+    <script src="js/just-validate.min.js?v=1.0.1"></script>
+    <script src="js/main.min.js?v=1.0.1"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Online store for printing designs on clothes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?v=1.0.1">
+    <title>SOWA</title>
+
+    <style>
+        .wrapper {
+            background: url(./images/dist/bg-top.png)top 25px center no-repeat,
+                url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                url(./images/dist/bg-center.png)top 447px center /1px no-repeat,
+                url(./images/dist/bg-bottom.png)bottom center no-repeat;
+        }
+
+        @media screen and (max-width:500px) {
+            .wrapper {
+                background: url(./images/dist/bg-top.png)top center /269px no-repeat,
+                    url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                    url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                    url(./images/dist/bg-center.png)top 447px center /1px no-repeat,
+                    url(./images/dist/bg-bottom.png)bottom center no-repeat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__wrapper-content">
+                    <div class="header__inner">
+                        <a href="/">
+                            <h1 class="header__logo">
+                                <picture>
+                                    <source srcset="./images/dist/Logo.webp" type="image/webp">
+                                    <img src="./images/dist/Logo.png" alt="logo">
+                                </picture>
+                            </h1>
+                        </a>
+                        <div class="header__time">
+                            <img src="./images/dist/time-min.svg" alt="time">
+                            <p>24/7</p>
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="index-page2.html" class="nav__link">Exchange rules</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page3.html" class="nav__link">AML/KYC</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page4.html" class="nav__link">FAQ</a>
+                            </li>
+                            <li class="nav__list-item nav__list-item_home-style">
+                                <a href="index.html" class="nav__link">Home</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <button class="header__language">en</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="application">
+                <div class="application__container container">
+                    <div class="application__inner-container">
+                        <div class="application__wrapper">
+                            <h2 class="application__title">
+                                Information on the application
+                            </h2>
+                            <p class="application__subtitle application__subtitle_gray">
+                                Application number: 2187845
+                            </p>
+                        </div>
+
+                        <div class="confirm__wrapper application__new-style">
+                            <div class="confirm__control confirm__control_light-color">
+                                <div class="confirm__box">
+                                    <p class="confirm__internal-title">Send</p>
+                                    <p class="confirm__internal-title js-sum"> <span id="currency-name"></span></p>
+                                </div>
+
+                                <div class="confirm__value-wrap">
+                                    <div class="confirm__inner-img confirm__inner-img_one confirm__inner-img_dark">
+                                        <img class="confirm__image-one" src="./images/dist/usdt-P-min.svg" alt="usdt">
+                                    </div>
+
+                                    <p class="confirm__text-style confirm__text-style_color-gray"><span
+                                            id="currency-name"></span></p>
+                                </div>
+                            </div>
+                            <div class="confirm__control confirm__control_light-color">
+                                <div class="confirm__box">
+                                    <p class="confirm__internal-title">Receive</p>
+                                    <p class="confirm__internal-title js-result">10804.6 INR</p>
+                                </div>
+
+                                <div class="confirm__value-wrap">
+                                    <div class="confirm__inner-img confirm__inner-img_two confirm__inner-img_dark">
+                                        <img class="confirm__image-two" src="./images/dist/UPI-P-min.svg" alt="usdt">
+                                    </div>
+
+                                    <p class="confirm__text-style confirm__text-style_color-gray">4276844029886439</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="application__wrapper-2">
+                        <div class="application__logo-inner">
+                            <img class="application__logo" src="./images/dist/logo-circle.svg" alt="logo">
+
+                            <img class="application__logo-items" src="./images/dist/logo-sova.svg" alt="logo">
+                        </div>
+                        <h3 class="application__title-sova">
+                            Waiting for application payment
+                        </h3>
+
+                        <div class="application__box-content">
+                            <div class="application__sum">
+                                <p>Amount due</p>
+                                <p class="js-sum"> <span id="currency-name"></span></p>
+                            </div>
+                            <div class="application__info">
+                                <p>The funds are not always credited
+                                    immediately after sending</p>
+                                <p>It may take some time for the funds to be credited to our account</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-pairs best-pairs__application">
+                        <div class="best-pairs__inner">
+                            <p class="best-pairs__text">Best pairs</p>
+                            <ul class="best-pairs__list">
+                                <li class="best-pairs__items best-pairs__items_min-size">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">USDT TRC20
+                                        </p>
+                                        <p class="best-pairs__size-bold">UPI INR</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 USDT = 108.4 INR
+                                    </p>
+                                </li>
+                                <li class="best-pairs__items best-pairs__items_min-size">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">BTC</p>
+                                        <p class="best-pairs__size-bold">UPI INR</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 BTC = 6.393.376.6 INR
+                                    </p>
+                                </li>
+                                <li class="best-pairs__items best-pairs__items_min-size">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">USDC ERC20</p>
+                                        <p class="best-pairs__size-bold">BHIM</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 USDC = 107.6 INR
+                                    </p>
+                                </li>
+                                <li class="best-pairs__items best-pairs__items_min-size">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">BNB</p>
+                                        <p class="best-pairs__size-bold">UPI INR</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 BNB = 61.287.226 INR
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews reviews__application">
+                <div class="reviews__container container">
+                    <div class="reviews__main-wrapper">
+                        <h2 class="reviews__text">Our reviews</h2>
+                        <ul class="reviews__list">
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Sameer</p>
+                                </div>
+                                <p class="reviews__comment">Great service, fast payouts</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amir</p>
+                                </div>
+                                <p class="reviews__comment">I've been using it for two yearsno problems</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Suraj</p>
+                                </div>
+                                <p class="reviews__comment">There was a delay in payment, the manager explained
+                                    everything
+                                    and gave me a discount.
+                                    Now I only exchange here</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amit</p>
+                                </div>
+                                <p class="reviews__comment">at night on the service can be delays, once I waited for
+                                    about
+                                    20 minutes, but the
+                                    transaction was completed successfully</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Isha</p>
+                                </div>
+                                <p class="reviews__comment">everything is top notch, been using for years, love it all
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="js/just-validate.min.js?v=1.0.1"></script>
+    <script src="js/main.min.js?v=1.0.1"></script>
+</body>
+
+</html>

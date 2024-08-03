@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Online store for printing designs on clothes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/dist/logo-white-32-32.ico" sizes="32x32">
+    <link rel="icon" href="./images/dist/logo-white-32-32.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="css/style.min.css?v=1.0.1">
+    <title>SOWA</title>
+
+    <style>
+        .wrapper {
+            background: url(./images/dist/bg-top.png)top 25px center no-repeat,
+                url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                url(./images/dist/bg-center.png)top 447px center no-repeat,
+                url(./images/dist/bg-bottom.png)bottom center no-repeat;
+        }
+
+        @media screen and (max-width:500px) {
+            .wrapper {
+                background: url(./images/dist/bg-top.png)top center /269px no-repeat,
+                    url(./images/dist/bg-right.png)top 509px right 0 no-repeat,
+                    url(./images/dist/bg-left.png)top 354px left 0 no-repeat,
+                    url(./images/dist/bg-center.png)top 28% center /525px no-repeat,
+                    url(./images/dist/bg-bottom.png)bottom center no-repeat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__wrapper-content">
+                    <div class="header__inner">
+                        <h1 class="header__logo">
+                            <picture>
+                                <source srcset="./images/dist/Logo.webp" type="image/webp">
+                                <img src="./images/dist/Logo.png" alt="logo">
+                            </picture>
+                        </h1>
+
+                        <div class="header__time">
+                            <img src="./images/dist/time-min.svg" alt="time">
+                            <p>24/7</p>
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="index-page2.html" class="nav__link">Exchange rules</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page3.html" class="nav__link">AML/KYC</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="index-page4.html" class="nav__link">FAQ</a>
+                            </li>
+                            <li class="nav__list-item nav__list-item_home-style">
+                                <a href="index.html" class="nav__link">Home</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <button class="header__language">en</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="price-calc">
+                <div class="price-calc__container container">
+                    <div class="price-calc__inner-bg">
+                        <button class="price-calc__btn">
+                            <img src="./images/dist/switch-min.svg" alt="button-calculator">
+                        </button>
+                    </div>
+                    <div class="price-calc__wrapper">
+                        <div class="price-calc__basic">
+                            <div class="price-calc__coll2">
+                                <div class="price-calc__currency currency currency_left">
+                                    <form class="currency__inner currency__inner_left">
+                                        <p class="price-calc__font">Send</p>
+                                        <input type="text" placeholder="50" class="price-calc__input" id="amount-send">
+                                      
+                                        <div class="price-calc__min-max">
+                                            <p>Min.: 50</p>
+                                            <p>Max.: 230000</p>
+                                        </div>
+                                    </form>
+
+
+                                    <div class="currency__coll-inner">
+                                        <ul class="currency__list currency__list-one">
+                                            <li data-f="all" class="currency__item _active-all">
+                                                ALL
+                                            </li>
+                                            <li data-f="USDT" class="currency__item  USDT">
+                                                USDT
+                                            </li>
+                                            <li data-f="BTC" class="currency__item  BTC">
+                                                BTC
+                                            </li>
+                                            <li data-f="USDC" class="currency__item  USDC">
+                                                USDC
+                                            </li>
+                                            <li data-f="ETH" class="currency__item   ETH">
+                                                ETH
+                                            </li>
+                                        </ul>
+
+                                        <form>
+                                            <div class="currency__search-wrap">
+                                                <input type="text" class="currency__search currency__search-one"
+                                                    placeholder="Currency search">
+                                                <img src="./images/dist/serch-min.svg" alt="search">
+                                            </div>
+                                        </form>
+
+                                        <div class="currency__wrapper-block">
+                                            <ul class="currency__list-block" id="currency-list-1">
+                                                <li>
+                                                    <button
+                                                        class="currency__item-block currency__item-block_valute _currency-active USDT"
+                                                        data-id="825"
+                                                        data-currency="USDT">
+                                                        <img src="./images/dist/usdt-P-min.svg" alt="USDT TRC20">
+                                                        <div>
+                                                            <p class="currency__brief">USDT TRC20</p>
+                                                            <p class="currency__full">USDT</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button
+                                                        class="currency__item-block currency__item-block_valute USDC"
+                                                        data-id="3408"
+                                                        data-currency="USDC">
+                                                        <img src="./images/dist/USDC-P-min.svg" alt="USDC ERC20">
+                                                        <div>
+                                                            <p class="currency__brief">USDC ERC20</p>
+                                                            <p class="currency__full">USDC</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute"
+                                                    data-id="2"
+                                                    data-currency="LTC">
+                                                        <img src="./images/dist/LTC-P-min.svg" alt="LTC">
+                                                        <div>
+                                                            <p class="currency__brief">LTC</p>
+                                                            <p class="currency__full">Litecoin</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button
+                                                        class="currency__item-block currency__item-block_valute USDT"
+                                                        data-id="4687"
+                                                        data-currency="USDT">
+                                                        <img src="./images/dist/USDT2-P-min.svg" alt="USDT BEP20">
+                                                        <div>
+                                                            <p class="currency__brief">USDT BEP20</p>
+                                                            <p class="currency__full">USDT</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute"
+                                                    data-id="5426"
+                                                    data-currency="SOL">
+                                                        <img src="./images/dist/SOL-P-min.svg" alt="SOL">
+                                                        <div>
+                                                            <p class="currency__brief">SOL</p>
+                                                            <p class="currency__full">Solana</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <!-- <li>
+                                                    <button class="currency__item-block currency__item-block_valute"
+                                                    data-id="3957"
+                                                    data-currency="TON">
+                                                        <img src="./images/dist/TON-P-min.svg" alt="TON">
+                                                        <div>
+                                                            <p class="currency__brief">TON</p>
+                                                            <p class="currency__full">The Open Network</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li> -->
+                                                <li>
+                                                    <button
+                                                        class="currency__item-block currency__item-block_valute USDC"
+                                                        data-id="825"
+                                                        data-currency="USDC">
+                                                        <img src="./images/dist/USDC-SOL-P-min.svg" alt="USDC SOL">
+                                                        <div>
+                                                            <p class="currency__brief">USDC SOL</p>
+                                                            <p class="currency__full">USDC</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                            </ul>
+                                            <ul class="currency__list-block" id="currency-list-2">
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute BTC"
+                                                    data-id="1"
+                                                    data-currency="BTC">
+                                                        <img src="./images/dist/BTS-P-min.svg" alt="BTC">
+                                                        <div>
+                                                            <p class="currency__brief">BTC</p>
+                                                            <p class="currency__full">Bitcoin</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute ETH"
+                                                    data-id="1027"
+                                                    data-currency="ETH">
+                                                        <img src="./images/dist/ETH-P-min.svg" alt="ETH">
+                                                        <div>
+                                                            <p class="currency__brief">ETH</p>
+                                                            <p class="currency__full">Ethereum</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute"
+                                                    data-id="1839"
+                                                    data-currency="BNB">
+                                                        <img src="./images/dist/BNB-P-min.svg" alt="BNB">
+                                                        <div>
+                                                            <p class="currency__brief">BNB</p>
+                                                            <p class="currency__full">Binance coin</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button
+                                                        class="currency__item-block currency__item-block_valute USDT"
+                                                        data-id="3408"
+                                                        data-currency="USDT">
+                                                        <img src="./images/dist/usdt-P-min.svg" alt="USDT ERC20">
+                                                        <div>
+                                                            <p class="currency__brief">USDT ERC20</p>
+                                                            <p class="currency__full">USDT</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute"
+                                                    data-id="4030"
+                                                    data-currency="POL">
+                                                        <img src="./images/dist/POL-P-min.svg" alt="POL">
+                                                        <div>
+                                                            <p class="currency__brief">POL</p>
+                                                            <p class="currency__full">Polygon</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute"
+                                                    data-id="6636"
+                                                    data-currency="DOT">
+                                                        <img src="./images/dist/DOT-P-min.svg" alt="DOT">
+                                                        <div>
+                                                            <p class="currency__brief">DOT</p>
+                                                            <p class="currency__full">Polkadot</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_valute"
+                                                    data-id="74"
+                                                    data-currency="DOGE">
+                                                        <img src="./images/dist/DOGE-P-min.svg" alt="DOGE">
+                                                        <div>
+                                                            <p class="currency__brief">DOGE</p>
+                                                            <p class="currency__full">Dogecoin</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span></span>
+
+                                <div class="price-calc__currency currency currency_right">
+                                    <form class="currency__inner currency__inner_right">
+                                        <p class="price-calc__font">Receive</p>
+                                        <input type="text" class="price-calc__input price" id="amount-receive">
+                                       
+                                        <div class="price-calc__min-max">
+                                            <p>Course: 108.4 INR = 1 USDT</p>
+                                            <p>Reserve: 61.401.274</p>
+                                        </div>
+                                    </form>
+
+                                    <div class="currency__coll-inner">
+                                        <ul class="currency__list currency__list-two">
+                                            <li data-f="all" class="currency__item currency__item_two _active-all">
+                                                ALL
+                                            </li>
+                                            <li data-f="UPI" class="currency__item currency__item_two">
+                                                UPI
+                                            </li>
+                                            <li data-f="BHIM" class="currency__item currency__item_two">
+                                                BHIM
+                                            </li>
+                                            <li data-f="PhonePe" class="currency__item currency__item_two">
+                                                PhonePe
+                                            </li>
+                                            <li data-f="Paytm" class="currency__item currency__item_two">
+                                                Paytm
+                                            </li>
+                                        </ul>
+
+                                        <form>
+                                            <div class="currency__search-wrap">
+                                                <input type="text" class="currency__search currency__search-two"
+                                                    placeholder="Currency search">
+                                                <img src="./images/dist/serch-min.svg" alt="search">
+                                            </div>
+                                        </form>
+
+                                        <div class="currency__wrapper-block currency__wrapper-block-two">
+                                            <ul class="currency__list-block filter-block-one">
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop UPI">
+                                                        <img src="./images/dist/UPI-P-min.svg" alt="UPI">
+                                                        <div>
+                                                            <p class="currency__brief">UPI</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button
+                                                        class="currency__item-block currency__item-block_shop Paytm">
+                                                        <img src="./images/dist/PAYTM-P-min.svg" alt="PAYTM">
+                                                        <div>
+                                                            <p class="currency__brief">PAYTM</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/Google-pay-P-min.svg" alt="Google pay">
+                                                        <div>
+                                                            <p class="currency__brief">Google pay</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/PayPal-min.svg" alt="PayPal">
+                                                        <div>
+                                                            <p class="currency__brief">PayPal</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/Amazon-Pay-P-min.svg" alt="Amazon Pay">
+                                                        <div>
+                                                            <p class="currency__brief">Amazon Pay</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/Bajaj-Pay-min.svg" alt="Bajaj Pay">
+                                                        <div>
+                                                            <p class="currency__brief">Bajaj Pay</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/Mobikwik-P-min.svg" alt="Mobikwik">
+                                                        <div>
+                                                            <p class="currency__brief">Mobikwik</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                            </ul>
+                                            <ul class="currency__list-block filter-block-two">
+                                                <li>
+                                                    <button
+                                                        class="currency__item-block currency__item-block_shop PhonePe">
+                                                        <img src="./images/dist/PhonePe-min.svg" alt="PhonePe">
+                                                        <div>
+                                                            <p class="currency__brief">PhonePe</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop BHIM">
+                                                        <img src="./images/dist/BHIM-P-min.svg" alt="BHIM">
+                                                        <div>
+                                                            <p class="currency__brief">BHIM</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/IMPS-P-min.svg" alt="IMPS">
+                                                        <div>
+                                                            <p class="currency__brief">IMPS</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/whatsapp-pay-P-min.svg"
+                                                            alt="WhatsApp Pay">
+                                                        <div>
+                                                            <p class="currency__brief">WhatsApp Pay</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/RuPay-min.svg" alt="Debit Card">
+                                                        <div>
+                                                            <p class="currency__brief">Debit Card</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/Jio-Money-P-min.svg" alt="Jio Money">
+                                                        <div>
+                                                            <p class="currency__brief">Jio Money</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                                <li>
+                                                    <button class="currency__item-block currency__item-block_shop">
+                                                        <img src="./images/dist/Free-Charge-P-min.svg" alt="FreeCharge">
+                                                        <div>
+                                                            <p class="currency__brief">FreeCharge</p>
+                                                            <p class="currency__full">INR</p>
+                                                        </div>
+                                                    </button>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="data-input" id="form">
+                            <p class="data-input__text">Data input</p>
+                            <div class="data-input__email-wrap">
+                                <input type="email" name="email" id="email"
+                                    class="data-input__input data-input__input_email _email" placeholder="Email">
+                                <img src="images/dist/email-min.svg" alt="letter">
+                            </div>
+
+                            <div>
+                                <input type="text" name="name" id="name"
+                                    class="data-input__input data-input__input_style"
+                                    placeholder="Full name of the recipient">
+                            </div>
+
+                            <div>
+                                <input type="text" id="tel" class="data-input__input"
+                                    placeholder="UPI ID or Number phone">
+                            </div>
+
+                            <div class="data-input__wrap-functional">
+                                <div>
+                                    <label class="data-input__custom-checkbox">
+                                        <input type="checkbox" id="check" name="input-check" value="yes"
+                                            class="data-input__hidden">
+
+                                        <div class="data-input__visible">
+                                            <img class="data-input__checkmark" src="./images/dist/Checkbox-min.svg"
+                                                alt="checkbox">
+                                        </div>
+                                        <p class="data-input__info-check">
+                                            I agree with the <span>AML/KYC</span> policy and exchange rules
+                                        </p>
+                                    </label>
+                                </div>
+
+
+                                <div class="data-input__load">
+                                    <p class="data-input__load-text">
+                                        Current network congestion <br>
+                                        Bitcoin
+                                    </p>
+                                    <img src="./images/dist/load-min.svg" alt="load" class="data-input__load-image">
+                                </div>
+
+                                <button type="submit" class="data-input__button">
+                                    Go to payment
+                                </button>
+                            </div>
+                        </form>
+
+
+                        <div class="modal-box">
+                            <div class="confirm">
+                                <h2 class="confirm__title">
+                                    Confirm the details
+                                </h2>
+                                <p class="confirm__descr">
+                                    To complete the exchange operation, confirm the transition by clicking the <br>
+                                    «Proceed to payment» button
+                                </p>
+                                <div class="confirm__wrapper">
+                                    <div class="confirm__control">
+                                        <p class="confirm__internal-title">Send</p>
+                                        <div class="confirm__value-wrap">
+                                            <div class="confirm__inner-img confirm__inner-img_one">
+                                                <img class="confirm__image-one" src="./images/dist/usdt-P-min.svg"
+                                                    alt="usdt">
+                                            </div>
+
+                                            <p class="confirm__text-style js-sum"> <span id="currency-name"></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="confirm__control confirm__control_bottom">
+                                        <p class="confirm__internal-title">Receive</p>
+                                        <div class="confirm__value-wrap">
+                                            <div class="confirm__inner-img confirm__inner-img_two">
+                                                <img class="confirm__image-two" src="./images/dist/UPI-P-min.svg"
+                                                    alt="usdt">
+                                            </div>
+
+                                            <div>
+                                                <p class="confirm__text-style js-result">10804.6 INR</p>
+                                                <p>UPI ID or Phone number</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="confirm__btn-inner">
+                                    <button class="confirm__btn confirm__btn_dark">Cancel</button>
+                                    <button class="confirm__btn confirm__btn_green"><a href="index-application.html">Go
+                                            to payment</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="best-pairs">
+                        <div class="best-pairs__inner">
+                            <p class="best-pairs__text">Best pairs</p>
+                            <ul class="best-pairs__list">
+                                <li class="best-pairs__items">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">USDT TRC20
+                                        </p>
+                                        <p class="best-pairs__size-bold">UPI INR</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 USDT = 108.4 INR
+                                    </p>
+                                </li>
+                                <li class="best-pairs__items">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">Bitcoin</p>
+                                        <p class="best-pairs__size-bold">UPI INR</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 BTC = 6.393.376.6 INR
+                                    </p>
+                                </li>
+                                <li class="best-pairs__items">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">USDC</p>
+                                        <p class="best-pairs__size-bold">BHIM INR</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 USDC = 107.6 INR
+                                    </p>
+                                </li>
+                                <li class="best-pairs__items">
+                                    <div class="best-pairs__items-wrap">
+                                        <p class="best-pairs__size-bold best-pairs__size-bold_row">BNB</p>
+                                        <p class="best-pairs__size-bold">UPI INR</p>
+                                    </div>
+                                    <p class="best-pairs__size-light">
+                                        1 BNB = 61.287.226 INR
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="question">
+                <div class="question__container container">
+                    <div class="question__wrapper">
+                        <h2 class="question__title title">
+                            Why SOWA?
+                        </h2>
+                        <ul class="question__list">
+                            <li class="question__items-card">
+                                <p class="question__subtitle">
+                                    Users come first for us
+                                </p>
+                                <p class="question__descr">
+                                    The user always comes first. From the very beginning, user protection has been our
+                                    top
+                                    priority. That's why we have implemented the most advanced data security and privacy
+                                    control tools in the entire SOWA ecosystem
+                                </p>
+                            </li>
+                            <li class="question__items-card">
+                                <p class="question__subtitle">24/7 online support</p>
+                                <p class="question__descr">Our experienced support specialists are always ready to help
+                                    you with any questions that
+                                    arise</p>
+                            </li>
+                            <li class="question__items-card">
+                                <p class="question__subtitle">Trusted providers</p>
+                                <p class="question__descr">We cooperate only with the most reliable fiat providers to
+                                    provide the best service in
+                                    the cryptocurrency market</p>
+                            </li>
+                            <li class="question__items-card">
+                                <p class="question__subtitle">We are trusted</p>
+                                <p class="question__descr">Our company has been operating in the market for a long time
+                                    and has earned the trust of
+                                    tens of thousands of users around the world. We use all necessary protection
+                                    methods, so
+                                    when you cooperate with us, you can be sure of your security. Our support service is
+                                    always in touch with clients 24/7. That is why people choose us.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="question__images">
+                        <img src="./images/dist/picture-SVG-bg-3.svg" alt="baground">
+                    </div>
+                </div>
+            </section>
+
+            <section class="news">
+                <div class="news__container container">
+                    <h2 class="news__title title">
+                        News
+                    </h2>
+                    <ul class="news__list-cards">
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card1.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card1.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">Crypto whales transferred $1.3 billion to USDC on Coinbase:
+                                what to expect</p>
+                        </li>
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card2.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card2.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">A new currency for exchange has been added now we accept TON
+                            </p>
+                        </li>
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card3.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card3.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">What will happen next with Polygon (MATIC) amid mixed signals
+                            </p>
+                        </li>
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card4.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card4.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">Whales bought up $57 million worth of Ethereum (ETH) in 24
+                                hours</p>
+                        </li>
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card5.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card5.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">People are increasingly immersed in the P2P arbitration
+                                industry. Experts believe it is a new money-making industry
+                            </p>
+                        </li>
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card6.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card6.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">Litecoin: assessing LTC’s chances of rallying by almost 30%.
+                            </p>
+                        </li>
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card7.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card7.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">Whales are interested in Ripple again: will it help XRP
+                                consolidate growth?</p>
+                        </li>
+                        <li class="news__items-cards">
+                            <picture>
+                                <source srcset="./images/dist/card8.webp" type="image/webp">
+                                <img class="news__cards-image" src="./images/dist/card8.jpeg" alt="baground">
+                            </picture>
+                            <p class="news__cards-descr">The growing demand for Bitcoin (BTC) could trigger a major
+                                rally</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="answers">
+                <div class="answers__container container">
+                    <div class="answers__wrapper">
+                        <h2 class="answers__title title">
+                            Answers to questions
+                        </h2>
+                        <ul class="answers__list">
+                            <li class="answers__list-item">
+                                <div class="answers__inner">
+                                    <h3 class="answers__subtitle-text">
+                                        What is the purpose of confirmations in the Bitcoin system?
+                                    </h3>
+                                    <p class="answers__descr">
+                                        It depends on the workload of the service. When receiving Bitcoin coins, the
+                                        transfer must be included in a block for confirmation. One inclusion in a block
+                                        is one confirmation. When there are two or more confirmations, the transfer is
+                                        considered confirmed, and Sowa operators process the request
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="answers__list-item">
+                                <div class="answers__inner">
+                                    <h3 class="answers__subtitle-text">
+                                        How much time is given to create an application?
+                                    </h3>
+                                    <p class="answers__descr">
+                                        You are given 15 minutes to create an application. If for some reason you do not
+                                        manage to create the application within the specified time, the application will
+                                        automatically disappear. In this case, please create a new application
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="answers__list-item">
+                                <div class="answers__inner">
+                                    <h3 class="answers__subtitle-text">
+                                        How long does it take to process an application?
+                                    </h3>
+                                    <p class="answers__descr">
+                                        It takes from 10 to 60 minutes to process one application. It depends on the
+                                        workload of the service
+                                    </p>
+                                </div>
+
+                            </li>
+                            <li class="answers__list-item">
+                                <div class="answers__inner">
+                                    <h3 class="answers__subtitle-text">
+                                        What is a destination tag (memo)?
+                                    </h3>
+                                    <p class="answers__descr">
+                                        Memo and Destination Tag are additional identifiers for your
+                                        wallet/account. As a rule, exchanges provide users with one common wallet for
+                                        replenishment,
+                                        and then distribute the funds received in accordance with the specified Memo.
+                                        If you do not specify it, your funds will go to the exchange wallet, but it will
+                                        not be able to
+                                        redirect them directly to your account. Make sure you enter the correct
+                                        Payment ID, Memo, or Destination Tag in destinations such as
+                                        EOS, Ripple (XRP), Stellar Lumens (XLM), Binance Coin (BNB) or Monero (XMR)
+                                    </p>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="answers__images">
+                        <img src="./images/dist/Picture-bg-svg.svg" alt="baground">
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="reviews__container container">
+                    <div class="reviews__main-wrapper">
+                        <h2 class="reviews__text">Our reviews</h2>
+                        <ul class="reviews__list">
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Sameer</p>
+                                </div>
+                                <p class="reviews__comment">Great service, fast payouts</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amir</p>
+                                </div>
+                                <p class="reviews__comment">I've been using it for two yearsno problems</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Suraj</p>
+                                </div>
+                                <p class="reviews__comment">There was a delay in payment, the manager explained
+                                    everything
+                                    and gave me a discount.
+                                    Now I only exchange here</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Amit</p>
+                                </div>
+                                <p class="reviews__comment">at night on the service can be delays, once I waited for
+                                    about
+                                    20 minutes, but the
+                                    transaction was completed successfully</p>
+                            </li>
+                            <li class="reviews__items">
+                                <div class="reviews__inner">
+                                    <img src="./images/dist/user-icon-min.svg" alt="avatar">
+                                    <p class="reviews__name">Isha</p>
+                                </div>
+                                <p class="reviews__comment">everything is top notch, been using for years, love it all
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/just-validate.min.js?v=1.0.1"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="js/main.min.js?v=1.0.1"></script>
+
+    
+ 
+</body>
+
+</html>

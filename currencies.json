@@ -1,0 +1,115 @@
+{
+    "currencies": [
+        {
+            "id": 825,
+            "name": "USDT",
+            "img": "images/dist/usdt-P-min.svg",
+            "code": "TLPKDQWUKaZBsmaThZo8nt3DQc9KDBci8n",
+            "qrCode": "./images/dist/usdt-trc-20.png",
+            "altImg": "images/dist/UPI-P-min.svg"
+        },
+        {
+            "id": 3408,
+            "name": "USDC",
+            "img": "images/dist/USDC-P-min.svg",
+            "code": "0x2e9d28cec8363a367aa7a8010e019aa55864b03a",
+            "qrCode": "./images/dist/USDC-erc20.png",
+            "altImg": "images/dist/PAYTM-P-min.svg"
+        },
+        {
+            "id": 2,
+            "name": "Litecoin",
+            "img": "images/dist/LTC-P-min.svg",
+            "code": "LbtSQFSVjmQBb78DsTjTjqEfWuCQjXixKw",
+            "qrCode": "./images/dist/LTC.png",
+            "altImg": "images/dist/Google-pay-P-min.svg"
+        },
+        
+        {
+            "id": 825,
+            "name": "USDT",
+            "img": "images/dist/usdt-P-min.svg",
+            "code": "0x2e9d28cec8363a367aa7a8010e019aa55864b03a",
+            "qrCode": "./images/dist/USDT-BEP20.png",
+            "altImg": "images/dist/PayPal-min.svg"
+        },
+        {
+            "id": 5426,
+            "name": "Solana",
+            "img": "images/dist/SOL-P-min.svg",
+            "code": "8gjpRU4VhBxL7EukzQc9QA1aGRToJkokSwAUERBN3V8i",
+            "qrCode": "./images/dist/SOL-sol.png",
+            "altImg": "images/dist/Amazon-Pay-P-min.svg"
+        },
+        {
+            "name": "The Open Network",
+            "img": "images/dist/TON-P-min.svg",
+            "code": "EQDD8dqOzaj4zUK6ziJOo_G2lx6qf1TEktTRkFJ7T1c_fPQb10263572",
+            "qrCode": "./images/dist/TON-ton.png",
+            "altImg": "images/dist/Bajaj-Pay-min.svg"
+        },
+        {
+            "id": 3408,
+            "name": "USDC",
+            "img": "images/dist/USDC-SOL-P-min.svg",
+            "code": "8gjpRU4VhBxL7EukzQc9QA1aGRToJkokSwAUERBN3V8i",
+            "qrCode": "./images/dist/SOL-sol.png",
+            "altImg": "images/dist/Mobikwik-P-min.svg"
+        },
+        {
+            "id": 1,
+            "name": "Bitcoin",
+            "img": "images/dist/BTS-P-min.svg",
+            "code": "17dMgt46KyQ2d4JCQtMVyt2Cm6iHxaBpTx",
+            "qrCode": "./images/dist/BTC.png",
+            "altImg": "images/dist/PhonePe-min.svg"
+        },
+        {
+            "id": 1027,
+            "name": "Ethereum",
+            "img": "images/dist/ETH-P-min.svg",
+            "code": "0x2e9d28cec8363a367aa7a8010e019aa55864b03a",
+            "qrCode": "./images/dist/ETH-erc20.png",
+            "altImg": "images/dist/BHIM-P-min.svg"
+        },
+        {
+            "id": 1839,
+            "name": "Binance coin",
+            "img": "images/dist/BNB-P-min.svg",
+            "code": "0x2e9d28cec8363a367aa7a8010e019aa55864b03a",
+            "qrCode": "./images/dist/BNB-bsc-bep20.png",
+            "altImg": "images/dist/IMPS-P-min.svg"
+        },
+        {
+            "id": 825,
+            "name": "USDT",
+            "img": "images/dist/usdt-P-min.svg",
+            "code": "0x2e9d28cec8363a367aa7a8010e019aa55864b03a",
+            "qrCode": "./images/dist/USDT-erc20.png",
+            "altImg": "images/dist/whatsapp-pay-P-min.svg"
+        },
+        {
+            "name": "Polygon",
+            "img": "images/dist/POL-P-min.svg",
+            "code": "0x2e9d28cec8363a367aa7a8010e019aa55864b03a",
+            "qrCode": "./images/dist/POL-erc20.png",
+            "altImg": "images/dist/RuPay-min.svg"
+        },
+        {
+            "id": 6636,
+            "name": "Polkadot",
+            "img": "images/dist/DOT-P-min.svg",
+            "code": "14Q3VpN5q1Q4hQDyA2TzWyJuSNMHYnVNj6QMani24VjfSbAq",
+            "qrCode": "./images/dist/DOT-dot.png",
+            "altImg": "images/dist/Jio-Money-P-min.svg"
+        },
+        {
+            "id": 74,
+            "name": "Dogecoin",
+            "img": "images/dist/DOGE-P-min.svg",
+            "code": "DNmwChjB4tEc9ZDkSBkna5Dc4tf1Sq2sJf",
+            "qrCode": "./images/dist/DOGE-dogecoin.png",
+            "altImg": "images/dist/Free-Charge-P-min.svg"
+        }
+    ]
+}
